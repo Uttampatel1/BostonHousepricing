@@ -15,9 +15,7 @@
 <body>
  <div class="login">
 	<h1>Boston House Price Prediction</h1>
-    <p>
-        This is a web application that predicts the house price based on the features of the house.
-    </p>
+
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
       <input type="text" name="CRIM" placeholder="CRIM" required="required" /><br>
