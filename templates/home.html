@@ -15,25 +15,25 @@
 
 <body class="mybody">
   <img src="img/house-1836070.jpg" alt="House image" class="bg">
-  <div class="contaner">
+  <div class="contaner" style="max-width: 80%; margin: auto; padding: 25px;">
     
-    <h1>Boston House Price Prediction</h1>
+    <h1 style="margin: 20px; text-align: center;">Boston House Price Prediction</h1>
     <div class="from1">
       <!-- Main Input For Receiving Query to our ML -->
-      <form action="{{ url_for('predict')}}" method="post">
-        <input type="text" name="CRIM" placeholder="Crime rate by town" required="required" /><br>
-        <input type="text" name="ZN" placeholder="Proportion of residential land zoned" required="required" /><br>
-        <input type="text" name="INDUS" placeholder="Proportion of non-retail business acres per town" required="required" /><br>
-        <input type="text" name="CHAS" placeholder="Charles River(yes=1)" required="required" /><br>
-        <input type="text" name="NOX" placeholder="Nitric oxides concentration" required="required" /><br>
-        <input type="text" name="RM" placeholder="Average number of rooms per dwelling" required="required" /><br>
-        <input type="text" name="Age" placeholder="Proportion of owner-occupied units built" required="required" /><br>
-        <input type="text" name="DIS" placeholder="Weighted distances to five Boston employment centres" required="required" /><br>
-        <input type="text" name="RAD" placeholder="Index of accessibility to radial highways" required="required" /><br>
-        <input type="text" name="TAX" placeholder="Full-value property-tax rate per $10,000" required="required" /><br>
-        <input type="text" name="PTRATIO" placeholder="Pupil-teacher ratio by town" required="required" /><br>
-        <input type="text" name="B" placeholder="Proportion of blacks by town" required="required" /><br>
-        <input type="text" name="LSTAT" placeholder="%Lower status of the population" required="required" /><br>
+      <form action="{{ url_for('predict')}}" method="post" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <input type="text" style="background-color: rgb(239, 247, 242); border: 2px solid black; outline: none; border-radius: 5px; width: 70%; margin: -2px 2px; font-size: 16px; height: 30px; text-align: center;" name="CRIM" placeholder="Crime rate by town" required="required" /><br>
+        <input type="text" style="background-color: rgb(239, 247, 242); border: 2px solid black; outline: none; border-radius: 5px; width: 70%; margin: -2px 2px; font-size: 16px; height: 30px; text-align: center;" name="ZN" placeholder="Proportion of residential land zoned" required="required" /><br>
+        <input type="text" style="background-color: rgb(239, 247, 242); border: 2px solid black; outline: none; border-radius: 5px; width: 70%; margin: -2px 2px; font-size: 16px; height: 30px; text-align: center;" name="INDUS" placeholder="Proportion of non-retail business acres per town" required="required" /><br>
+        <input type="text" style="background-color: rgb(239, 247, 242); border: 2px solid black; outline: none; border-radius: 5px; width: 70%; margin: -2px 2px; font-size: 16px; height: 30px; text-align: center;" name="CHAS" placeholder="Charles River(yes=1)" required="required" /><br>
+        <input type="text" style="background-color: rgb(239, 247, 242); border: 2px solid black; outline: none; border-radius: 5px; width: 70%; margin: -2px 2px; font-size: 16px; height: 30px; text-align: center;" name="NOX" placeholder="Nitric oxides concentration" required="required" /><br>
+        <input type="text" style="background-color: rgb(239, 247, 242); border: 2px solid black; outline: none; border-radius: 5px; width: 70%; margin: -2px 2px; font-size: 16px; height: 30px; text-align: center;" name="RM" placeholder="Average number of rooms per dwelling" required="required" /><br>
+        <input type="text" style="background-color: rgb(239, 247, 242); border: 2px solid black; outline: none; border-radius: 5px; width: 70%; margin: -2px 2px; font-size: 16px; height: 30px; text-align: center;" name="Age" placeholder="Proportion of owner-occupied units built" required="required" /><br>
+        <input type="text" style="background-color: rgb(239, 247, 242); border: 2px solid black; outline: none; border-radius: 5px; width: 70%; margin: -2px 2px; font-size: 16px; height: 30px; text-align: center;" name="DIS" placeholder="Weighted distances to five Boston employment centres" required="required" /><br>
+        <input type="text" style="background-color: rgb(239, 247, 242); border: 2px solid black; outline: none; border-radius: 5px; width: 70%; margin: -2px 2px; font-size: 16px; height: 30px; text-align: center;" name="RAD" placeholder="Index of accessibility to radial highways" required="required" /><br>
+        <input type="text" style="background-color: rgb(239, 247, 242); border: 2px solid black; outline: none; border-radius: 5px; width: 70%; margin: -2px 2px; font-size: 16px; height: 30px; text-align: center;" name="TAX" placeholder="Full-value property-tax rate per $10,000" required="required" /><br>
+        <input type="text" style="background-color: rgb(239, 247, 242); border: 2px solid black; outline: none; border-radius: 5px; width: 70%; margin: -2px 2px; font-size: 16px; height: 30px; text-align: center;" name="PTRATIO" placeholder="Pupil-teacher ratio by town" required="required" /><br>
+        <input type="text" style="background-color: rgb(239, 247, 242); border: 2px solid black; outline: none; border-radius: 5px; width: 70%; margin: -2px 2px; font-size: 16px; height: 30px; text-align: center;" name="B" placeholder="Proportion of blacks by town" required="required" /><br>
+        <input type="text" style="background-color: rgb(239, 247, 242); border: 2px solid black; outline: none; border-radius: 5px; width: 70%; margin: -2px 2px; font-size: 16px; height: 30px; text-align: center;" name="LSTAT" placeholder="%Lower status of the population" required="required" /><br>
         <button type="submit" class="btn">Predict</button>
       </form>
     </div>
